@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrary Downloader — The Only Downloader You Need</title>
+    <meta name="description"
+        content="Contrary Downloader — Add games to your Steam library, download DRM-free games, bypass DRM protections. The best UI, forever free.">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ═══ FLOATING NAV ═══ -->
+    <nav class="floating-nav" id="floating-nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <img src="icon.png" alt="Contrary" class="nav-logo-img">
+                <span class="nav-brand">CONTRARY</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="https://discord.gg/EPYneDjXuf" target="_blank" rel="noopener"
+                    class="nav-link nav-discord-btn">Discord</a>
+                <a href="#" class="nav-link nav-download-btn" id="nav-dl-btn">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO SECTION ═══ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-particles" id="hero-particles"></div>
+        <div class="hero-vignette"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-logo-wrap anim-pop" data-delay="0">
+                <div class="hero-logo-ring">
+                    <img src="icon.png" class="hero-logo-img" alt="Contrary Downloader">
+                </div>
+            </div>
+            <h1 class="hero-title anim-pop" data-delay="150">
+                <span class="hero-title-main">Contrary</span>
+                <span class="hero-title-sub">Downloader</span>
+            </h1>
+            <p class="hero-tagline anim-pop" data-delay="300">The only downloader you need besides Steam.</p>
+            <button class="hero-download-btn anim-pop" data-delay="450" id="hero-dl-btn">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
+                </svg>
+                <span>Download Now</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- ═══ FEATURES SECTION ═══ -->
+    <section class="features" id="features">
+        <div class="section-accent-line"></div>
+        <h2 class="section-title anim-slide">Features</h2>
+        <p class="section-subtitle anim-slide" data-delay="100">Everything you need, nothing you don't.</p>
+        <div class="features-grid">
+            <div class="feature-card anim-slide" data-delay="0">
+                <div class="feature-icon-wrap">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <path
+                            d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                    </svg>
+                </div>
+                <h3 class="feature-title">Add Games to Steam</h3>
+                <p class="feature-desc">Seamlessly add games directly to your Steam library with one click.</p>
+            </div>
+            <div class="feature-card anim-slide" data-delay="100">
+                <div class="feature-icon-wrap">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    </svg>
+                </div>
+                <h3 class="feature-title">Best UI</h3>
+                <p class="feature-desc">No more Cirno. No more Pub. A clean, cinematic experience built for gamers.</p>
+            </div>
+            <div class="feature-card anim-slide" data-delay="200">
+                <div class="feature-icon-wrap">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                    </svg>
+                </div>
+                <h3 class="feature-title">Download DRM Games</h3>
+                <p class="feature-desc">Access and download DRM-protected games from our massive database.</p>
+            </div>
+            <div class="feature-card anim-slide" data-delay="300">
+                <div class="feature-icon-wrap">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <path
+                            d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+                    </svg>
+                </div>
+                <h3 class="feature-title">Bypass DRM</h3>
+                <p class="feature-desc">Automatically bypass DRM protections with our intelligent fix generator.</p>
+            </div>
+        </div>
+        <div class="developers-strip anim-slide" data-delay="400">
+            <span class="dev-label">Developed by</span>
+            <div class="dev-names">
+                <span class="dev-name">ayush.ue5</span>
+                <span class="dev-sep">&</span>
+                <span class="dev-name">contrary_7</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FAQ SECTION ═══ -->
+    <section class="faq" id="faq">
+        <div class="section-accent-line"></div>
+        <h2 class="section-title anim-slide">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item anim-slide" data-delay="0">
+                <button class="faq-question" id="faq-q1">
+                    <span>Is it a virus?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-a1">
+                    <p>No. It was developed by us and contains absolutely no virus or malware. You can verify it
+                        yourself:</p>
+                    <a href="https://www.virustotal.com" target="_blank" rel="noopener" class="faq-link">View VirusTotal
+                        Results →</a>
+                </div>
+            </div>
+            <div class="faq-item anim-slide" data-delay="100">
+                <button class="faq-question" id="faq-q2">
+                    <span>Can you download all Steam games?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-a2">
+                    <p>Yes — all games that our database offers are available for download.</p>
+                </div>
+            </div>
+            <div class="faq-item anim-slide" data-delay="200">
+                <button class="faq-question" id="faq-q3">
+                    <span>Why do some games need a fix or online fix?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-a3">
+                    <p>Because some games have special protection systems (like Denuvo) designed to prevent bypasses. We
+                        generate fixes specifically for those.</p>
+                </div>
+            </div>
+            <div class="faq-item anim-slide" data-delay="300">
+                <button class="faq-question" id="faq-q4">
+                    <span>Why Windows only?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-a4">
+                    <p>Linux and macOS support requires significantly more development effort and concentration. We plan
+                        to add support for these platforms in the future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ BOTTOM DOWNLOAD CTA ═══ -->
+    <section class="bottom-cta" id="bottom-cta">
+        <div class="cta-glow"></div>
+        <h2 class="cta-title anim-slide">Ready to download?</h2>
+        <p class="cta-sub anim-slide" data-delay="100">Get Contrary Downloader — forever free, no paywalls.</p>
+        <button class="hero-download-btn cta-btn anim-slide" data-delay="200" id="bottom-dl-btn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
+            </svg>
+            <span>Download Now</span>
+        </button>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="icon.png" alt="" class="footer-logo">
+                <span class="footer-name">CONTRARY</span>
+            </div>
+            <span class="footer-copy">© 2026 Contrary Downloader. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- ═══ DOWNLOAD POPUP MODAL ═══ -->
+    <div class="dl-overlay hidden" id="dl-overlay">
+        <div class="dl-modal" id="dl-modal">
+            <button class="dl-close" id="dl-close" title="Close">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                </svg>
+            </button>
+            <div class="dl-header">
+                <img src="icon.png" alt="" class="dl-icon">
+                <h3 class="dl-title">Download Contrary Downloader</h3>
+                <p class="dl-subtitle">Choose your preferred installation method</p>
+            </div>
+            <div class="dl-options">
+                <button class="dl-option dl-option-primary" id="dl-setup">
+                    <div class="dl-option-badge">Recommended</div>
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                    </svg>
+                    <span class="dl-option-title">Setup Installer</span>
+                    <span class="dl-option-desc">Full installer with auto-updates</span>
+                </button>
+                <button class="dl-option dl-option-secondary" id="dl-portable">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                        <path
+                            d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z" />
+                    </svg>
+                    <span class="dl-option-title">Portable (Single .exe)</span>
+                    <span class="dl-option-desc">No install needed — not auto-updated</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
