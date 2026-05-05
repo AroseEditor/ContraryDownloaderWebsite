@@ -116,7 +116,7 @@
 
   // ── Portable button: direct Discord CDN link ──
   document.getElementById('dl-portable').addEventListener('click', () => {
-    triggerDownload('https://cdn.discordapp.com/attachments/1401324987071336510/1498678873028821188/Contrary_Downloader.exe?ex=69f208f7&is=69f0b777&hm=db81f8daf85a3cf68b187eacc7ce4d17850a8d77398b21e01d89641d7a3d83a2&');
+    triggerDownload('https://cdn.discordapp.com/attachments/1401324987071336510/1498678873028821188/Contrary_Downloader.exe?ex=69fa9ab7&is=69f94937&hm=31ac545a180be9916ef048579bf4128165830f48050bdb955519e4ca098b02a2&');
   });
 
   // ── Bottom CTA "scroll to top" visual connection ──
